@@ -1,0 +1,170 @@
+/** Resets **/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    overflow-y: scroll;
+    color: #000;
+}
+
+li {
+    list-style: none;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.fondo {
+    height: 100vh;
+    width: 100vw;
+    background: hsla(27, 100%, 19%, 1);
+    background: linear-gradient(135deg, hsla(27, 100%, 19%, 1) 15%, hsla(29, 100%, 35%, 1) 37%, hsla(27, 100%, 61%, 1) 68%, hsla(29, 100%, 73%, 1) 90%);
+    background: -moz-linear-gradient(135deg, hsla(27, 100%, 19%, 1) 15%, hsla(29, 100%, 35%, 1) 37%, hsla(27, 100%, 61%, 1) 68%, hsla(29, 100%, 73%, 1) 90%);
+    background: -webkit-linear-gradient(135deg, hsla(27, 100%, 19%, 1) 15%, hsla(29, 100%, 35%, 1) 37%, hsla(27, 100%, 61%, 1) 68%, hsla(29, 100%, 73%, 1) 90%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#602C00", endColorstr="#B55700", GradientType=1);
+}
+
+/** Header **/
+
+
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: end;
+    padding-right: 7rem;
+    height: 10rem;
+    width: 100%;
+    z-index: 100;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    height: 6rem;
+    align-items: center;
+}
+
+
+.navbar {
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.links li {
+    display: inline;
+}
+
+.links li a {
+    display: inline-block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, sans-serif;
+    transition: text-shadow 0.3s ease;
+}
+
+
+.links li a:hover {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #0ff, 0 0 70px #0ff, 0 0 80px #0ff,
+        0 0 100px #0ff, 0 0 150px #0ff;
+}
+
+
+.item {
+    color: #fff;
+    font-size: 1.6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.btn {
+    width: 8rem;
+    height: 3rem;
+    background: none;
+    border-radius: 2rem;
+    color: rgb(255, 37, 37);
+    border: 2px solid rgb(255, 37, 37);
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    color: rgb(230, 87, 87);
+    border: 2px solid rgb(230, 87, 87);
+    text-shadow: 0 0 10px rgb(230, 87, 87);
+    box-shadow: 0 0 10px rgb(230, 87, 87);
+}
+
+/* main */
+
+.one {
+    width: 30vw;
+}
+
+.two {
+
+    width: 30vw;
+}
+
+.three {
+    width: 40vw;
+}
+/* carrousel */
+
+.carousel-item { 
+    width: 50rem;
+}
+
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slide {
+    flex: 0 0 auto;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .next {
+    right: 0;
+  }
