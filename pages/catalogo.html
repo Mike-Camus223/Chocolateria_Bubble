@@ -33,32 +33,14 @@
                     <div class="offcanvas-body">
                         <div id="carrito">
                             <div class="botones-box">
-                                <button class="boton-vaciar" onclick="vaciarCarrito()" style="width: 17rem;
-                            height: 3.5rem;
-                            border-radius: 25px;
-                            border: none;
-                            background-color: rgb(133, 17, 17);
-                            color: #fff;
-                            font-family: Verdana, Geneva, Tahoma, sans-serif;
-                            font-size: 15px;
-                            font-weight: 600;
-                            transition: .15s ease-in;margin-bottom: 2rem;">Vaciar Carrito</button>
-                            <button class="boton-comprar" onclick="comprar()" style="width: 17rem;
-                            height: 3.5rem;
-                            border-radius: 25px;
-                            border: none;
-                            background-color: rgb(133, 17, 17);
-                            color: #fff;
-                            font-family: Verdana, Geneva, Tahoma, sans-serif;
-                            font-size: 15px;
-                            font-weight: 600;
-                            transition: .15s ease-in;margin-bottom: 2rem;">Comprar</button>
+                                <button class="boton-vaciar" onclick="vaciarCarrito()">Vaciar Carrito</button>
+                                <button class="boton-comprar" onclick="comprar()">Comprar</button>
                             </div>
-                            <h2>Tus Productos son:</h2>
-                            <ul id="lista-carrito">
+                            <h2 style="margin-bottom: 2rem;">Tus Productos son:</h2>
+                            <ul class="lista-carro-estilo" id="lista-carrito">
                                 <!-- Los productos agregados se mostrarán aquí -->
                             </ul>
-                            <p>Total: <span id="total">$0</span></p>
+                            <p class="Total-pago">El total a pagar es: <span id="total">$0</span></p>
                         </div>
                         <!-- dibuja pedido -->
                         <!-- estructura para dibujar los pedidos de los caramelos del carrito -->
@@ -94,7 +76,6 @@
                 <li><a class="item" href="../index.html">Home</a></li>
                 <li><a class="item" href="#">Acerca De Nosotros</a></li>
                 <li><a class="item" href="#">Catalogo</a></li>
-                <li><a class="item" href="#">Carrito</a></li>
                 <li>
                     <a class="item" href="./aaa.html">
                         <input id="btn_producto_1" class="btn_bar" type="button" value="Login">

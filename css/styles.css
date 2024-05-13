@@ -144,6 +144,71 @@ a {
     right: 0;
 }
 
+.botones-box {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.boton-vaciar {
+    width: 17rem;
+    height: 3.5rem;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(133, 17, 17);
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    transition: .15s ease-in;
+    margin-bottom: 2rem;
+}
+
+.boton-comprar {
+    width: 17rem;
+    height: 3.5rem;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(133, 17, 17);
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    transition: .15s ease-in;
+    margin-bottom: 2rem;
+}
+
+.lista-carro-estilo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #632323;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.Total-pago {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #632323;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+
+/* Main index */
+
+.aviso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1-titulo {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 32px;
+    color: #fff;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+}
 
 /* pagina catalogo */
 
@@ -213,7 +278,7 @@ a {
 .card_titulo {
     display: flex;
     justify-content: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 800;
     font-size: 20px;
 }

@@ -22,8 +22,13 @@ function vaciarCarrito() {
 // FUNCION DE COMPRA DEL CARRITO Y ALERT //
 
 function comprar() {
-    vaciarCarrito();
-    alert("¡Muchas gracias por comprar en la CandyShop!");
+    if (carrito.length === 0) {
+        alert("¡Oops No hay nada en el carrito!");
+    } else {
+        const totalGastado = carrito.reduce((total, producto) => total + producto.precio, 0);
+        vaciarCarrito();
+        alert(`¡Gracias por comprar en la CandyShop! Su gasto total fue de: $${totalGastado} Tambien ID de pedido es:`);
+    }
 }
 
 // FUNCION PARA MOSTRAR LOS PRODUCTOS DEL CARRITO//
