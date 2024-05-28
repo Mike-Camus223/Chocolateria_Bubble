@@ -14,6 +14,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.4/dist/css/uikit.min.css" />
+
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -46,7 +48,7 @@
         ¡Ven y prueba la magia!
       </p>
       <div>
-        <a href="#">
+        <a href="#historia">
           <button class="button_firts">
             <p class="button_firts_text">VER NUESTRA HISTORIA</p>
           </button>
@@ -92,7 +94,7 @@
     </div> -->
     <section class="third_info_index">
       <div class="third_shape">
-          
+
       </div>
       <div class="third_base_general">
         <div class="third_base1">
@@ -116,7 +118,7 @@
             <div class="base2">
               <img class="base2_img" src="./assets/images/icons/chocolate-2.webp" alt="">
               <div class="base2_textbase">
-                <h3 class="base2_titulo">Desde 1958</h3>
+                <h3 class="base2_titulo">Desde 1990</h3>
                 <p class="base2_parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ducimus rem quod
                   animi, quasi cumque dolore</p>
               </div>
@@ -159,23 +161,97 @@
         </div>
       </div>
     </section>
-    <div class="separador_third">
-
-    </div>
-    <section class="fourth_history_index">
-      asdasd
-      <div class="fourth_base">
-        
-
+    <div class="separador_third"></div>
+    <section class="fourth_history_index" id="historia">
+      <div class="fourth_base1">
+        <div class="fourth_grid">
+          <div class="fourth_grid_item">
+            <img src="./assets/images/logos/history1.jpg" alt="" class="fourth_grid_item_img">
+          </div>
+          <div class="fourth_grid_item">
+            <img src="./assets/images/logos/history2.jpg" alt="" class="fourth_grid_item_img">
+          </div>
+        </div>
       </div>
+      <div class="fourth_base2">
+        <div class="historia">
+          <h3 class="historia_titulo">Nuestra Historia</h3>
+          <p class="historia_parrafo">En 1990, en un pequeño pueblo de los Andes llamado Huánuco, Katty Vilcabana fundó
+            "Bubble" con el
+            sueño de compartir la magia del chocolate artesanal. Inspirada por su abuela, Katty utilizó los mejores
+            granos de cacao y mezclas únicas de ingredientes locales para crear delicias irresistibles. Desde entonces,
+            Bubble se ha convertido en un referente de calidad y tradición, llevando alegría y efervescencia en cada
+            bocado de sus exquisitos chocolates
+          </p>
+          <a class="historia_link_base" href="#">
+            <p class="historia_link">CONOCE MÁS</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="five_galeria_index">
+      <div class="galeria_shape"></div>
+      <div class="galeria">
+        <h2 class="galeria_titulo">Nuestra Galeria</h2>
+      </div>
+      <!-- <div class="galeria_grid">
+        <div class="galeria_grid_item">
+          <img src="./assets/images/galeria/galeria1.jpg" alt="" class="galeria_grid_item_img">
+        </div>
+        <div class="galeria_grid_item">
+          <img src="./assets/images/galeria/galeria2.jpg" alt="" class="galeria_grid_item_img">
+        </div>
+        <div class="galeria_grid_item">
+          <img src="./assets/images/galeria/galeria3.jpg" alt="" class="galeria_grid_item_img">
+        </div>
+        <div class="galeria_grid_item">
+          <img src="./assets/images/galeria/galeria4.jpg" alt="" class="galeria_grid_item_img">
+        </div>
+        <div class="galeria_grid_item">
+          <img src="./assets/images/galeria/galeria5.jpg" alt="" class="galeria_grid_item_img">
+        </div>
+        <div class="galeria_grid_item">
+          <img src="./assets/images/galeria/galeria6.jpg" alt="" class="galeria_grid_item_img">
+        </div>
+        <div class="galeria_grid_item">
+          <img src="./assets/images/galeria/galeria7.jpg" alt="" class="galeria_grid_item_img">
+        </div>
+        <div class="galeria_grid_item">
+          <img src="./assets/images/galeria/galeria8.jpg" alt="" class="galeria_grid_item_img">
+        </div>
+      </div> -->
+      <div class="uk-child-width-1-3@m" uk-grid uk-lightbox="animation: slide">
+        <div>
+          <a class="uk-inline" href="./assets/images/galeria/galeria1.jpg" data-caption="Caption 1">
+            <img src="./assets/images/galeria/galeria1.jpg" width="1800" height="1200" alt="">
+          </a>
+        </div>
+        <div>
+          <a class="uk-inline" href="./assets/images/galeria/galeria2.jpg" data-caption="Caption 2">
+            <img src="./assets/images/galeria/galeria2.jpg" width="1800" height="1200" alt="">
+          </a>
+        </div>
+        <div>
+          <a class="uk-inline" href="./assets/images/galeria/galeria3.jpg" data-caption="Caption 3">
+            <img src="./assets/images/galeria/galeria3.jpg" width="1800" height="1200" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+    <div class="separador_galeria"></div>
+    <section class="six_comentarios_index">
+
     </section>
   </main>
   <footer>
+
   </footer>
   <script defer src="./js/index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.4/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.4/dist/js/uikit-icons.min.js"></script>
 </body>
 
 </html>
