@@ -4,37 +4,173 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CandyShop</title>
+  <title>Bubble Chocolateria - Home</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-  <header>
+  <header class="header_container">
     <nav class="navbar">
+      <div class="logo">
+        <img src="./assets/images/logos/logo_chocolateria.png" alt="Bubble Chocolateria" class="item_logo">
+      </div>
       <ul class="links">
-        <li><a class="item" href="./index.html">Home</a></li>
-        <li><a class="item" href="#">Acerca De Nosotros</a></li>
-        <li><a class="item" href="./pages/catalogo.html">Catalogo</a></li>
+        <li><a class="item" href="#">ACERCA DE NOSOTROS</a></li>
+        <li><a class="item" href="./pages/catalogo.html">CATALOGO</a></li>
         <li>
           <a class="item" href="#">
-            <input id="btn_producto_1" class="btn_bar" type="button" value="Login">
+            <input id="btn_producto_1" class="btn_bar" type="button" value="LOGIN">
           </a>
         </li>
       </ul>
     </nav>
   </header>
-  <main class="fondo">
-    <div class="aviso">
-      <h1 class="h1-titulo">
-        Sé que está incompleto el índex, pero créame que estará increíble en la entrega final. Por favor, diríjase a la
-        pestaña de "Catálogo".
+  <main class="content_main">
+    <section class="firts">
+      <img class="fondo" src="./assets/images/logos/fondo_chocolate.jpg" alt="">
+      <h1>
+        <span class="titulo_firts">Disfruta el</span>
+        <span class="titulo_second">chocolate mágico de Bubble</span>
       </h1>
+      <p class="titulo_parrafo">
+        En Bubble, disfruta de nuestra variedad de helados, frappés y chocolates irresistibles para todos los gustos.
+        ¡Ven y prueba la magia!
+      </p>
+      <div>
+        <a href="#">
+          <button class="button_firts">
+            <p class="button_firts_text">VER NUESTRA HISTORIA</p>
+          </button>
+        </a>
+      </div>
+    </section>
+    <section class="second_catalogo_index">
+      <div class="second_part1">
+        <div class="annuncent">
+          <h2 class="annuncent_titulo">Nuestro Catalogo</h2>
+          <p class="annuncent_parrafo">¡Bienvenido a Chocolatería Bubble! Sumérgete en un mundo de sabores con nuestro
+            increíble catálogo de
+            delicias artesanales. Desde chocolates irresistibles hasta helados cremosos, refrescantes Frunies y
+            revitalizantes Frappés, en Bubble encontrarás una experiencia única en cada bocado. ¡Descubre más y déjate
+            tentar!
+          </p>
+          <a class="annuncent_link_base" href="./pages/catalogo.html">
+            <p class="annuncent_link">VER CATALOGO</p>
+          </a>
+        </div>
+      </div>
+      <div class="second_part2">
+        <div class="grid_images">
+          <div class="grid_item">
+            <img class="grid_item_image" src="./assets/images/logos/index_grid1.jpg" alt="">
+          </div>
+          <div class="grid_item">
+            <img class="grid_item_image" src="./assets/images/logos/index_grid2.jpg" alt="">
+          </div>
+          <div class="grid_item">
+            <img class="grid_item_image" src="./assets/images/logos/index_grid3.jpg" alt="">
+          </div>
+          <div class="grid_item">
+            <img class="grid_item_image" src="./assets/images/logos/index_grid4.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <div class="separador_inferior">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+        <path class="elementor-shape-fill" d="M500.2,94.7L0,0v100h1000V0L500.2,94.7z"></path>
+      </svg>
+    </div> -->
+    <section class="third_info_index">
+      <div class="third_shape">
+          
+      </div>
+      <div class="third_base_general">
+        <div class="third_base1">
+          <h3 class="third_base_titulo">
+            Nuestras Cualidades
+          </h3>
+          <p class="third_base_parrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt commodi
+            corrupti at quas temporibus modi
+          </p>
+        </div>
+        <div class="third_base2">
+          <div class="third_base2_a">
+            <div class="base2">
+              <img class="base2_img" src="./assets/images/icons/chocolate-1.webp" alt="">
+              <div class="base2_textbase">
+                <h3 class="base2_titulo">100% Cacao Puro</h3>
+                <p class="base2_parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ducimus rem quod
+                  animi, quasi cumque dolore</p>
+              </div>
+            </div>
+            <div class="base2">
+              <img class="base2_img" src="./assets/images/icons/chocolate-2.webp" alt="">
+              <div class="base2_textbase">
+                <h3 class="base2_titulo">Desde 1958</h3>
+                <p class="base2_parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ducimus rem quod
+                  animi, quasi cumque dolore</p>
+              </div>
+            </div>
+            <div class="base2">
+              <img class="base2_img" src="./assets/images/icons/chocolate-3.webp" alt="">
+              <div class="base2_textbase">
+                <h3 class="base2_titulo">La Mejor Receta</h3>
+                <p class="base2_parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ducimus rem quod
+                  animi, quasi cumque dolore</p>
+              </div>
+            </div>
+          </div>
+          <div class="third_base2_b">
+            <div class="base3">
+              <img class="base3_img" src="./assets/images/icons/chocolate-4.webp" alt="">
+              <div class="base3_textbase">
+                <h3 class="base3_titulo">Sabores Magicos</h3>
+                <p class="base3_parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ducimus rem quod
+                  animi, quasi cumque dolore</p>
+              </div>
+            </div>
+            <div class="base3">
+              <img class="base3_img" src="./assets/images/icons/chocolate-5.webp" alt="">
+              <div class="base3_textbase">
+                <h3 class="base3_titulo">Dulce Creatividad</h3>
+                <p class="base3_parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ducimus rem quod
+                  animi, quasi cumque dolore</p>
+              </div>
+            </div>
+            <div class="base3">
+              <img class="base3_img" src="./assets/images/icons/chocolate-6.webp" alt="">
+              <div class="base3_textbase">
+                <h3 class="base3_titulo">Hecho con Amor</h3>
+                <p class="base3_parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ducimus rem quod
+                  animi, quasi cumque dolore</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="separador_third">
+
     </div>
+    <section class="fourth_history_index">
+      asdasd
+      <div class="fourth_base">
+        
+
+      </div>
+    </section>
   </main>
   <footer>
-
   </footer>
   <script defer src="./js/index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
