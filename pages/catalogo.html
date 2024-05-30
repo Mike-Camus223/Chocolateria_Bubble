@@ -2,219 +2,196 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CandyShop - Catalogo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chocolateria Bubble - Catálogo</title>
+  <link rel="icon" href="../assets/images/icons/bubble_icon.png" sizes="32x32" type="icono">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.4/dist/css/uikit.min.css" />
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <ul class="linksparte1">
-                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                    aria-controls="offcanvasRight">
-                    <span class="material-symbols-outlined">
-                        shopping_cart
-                    </span>
-                </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                    aria-labelledby="offcanvasRightLabel" data-bs-backdrop="true">
-                    <div class="offcanvas-header">
-                        <h2 class="offcanvas-title" id="offcanvasRightLabel">Carrito de Compras</h2>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <div id="carrito">
-                            <div class="botones-box">
-                                <button class="boton-vaciar" onclick="vaciarCarrito()">Vaciar Carrito</button>
-                                <button class="boton-comprar" onclick="comprar()">Comprar</button>
-                            </div>
-                            <h2 style="margin-bottom: 2rem;">Tus Productos son:</h2>
-                            <ul class="lista-carro-estilo" id="lista-carrito">
-                                <!-- Los productos agregados se mostrarán aquí -->
-                            </ul>
-                            <p class="Total-pago">El total a pagar es: <span id="total">$0</span></p>
-                        </div>
-                        <!-- dibuja pedido -->
-                        <!-- estructura para dibujar los pedidos de los caramelos del carrito -->
-
-                        <!-- <div class="producto-dibu" style="display: flex;">
-                            <div class="cajaprodu" style="width: 13rem; padding-top: 2rem;">
-                                <img class="img-produ" src="../assets/images/catalogo_1.jpg" style="width: 13rem;"
-                                    alt="">
-                            </div>
-                            <div class="datos" style="display: block; flex-direction: column;">
-                                <div class="nombre">
-                                    <h3 class="nombreP"
-                                        style="font-size: 16px; font-weight: 600; font-family: Verdana, Geneva, Tahoma, sans-serif; padding: 2.5rem 0 0 3rem;">
-                                        Nombre</h3>
-                                </div>
-                                <div class="cantidad">
-                                    <h3 class="nombreP"
-                                        style="font-size: 16px; font-weight: 600; font-family: Verdana, Geneva, Tahoma, sans-serif; padding: 1rem 0 0 3rem;">
-                                        Cantidad: 3</h3>
-                                </div>
-                                <div class="precio">
-                                    <h3 class="nombreP"
-                                        style="font-size: 16px; font-weight: 600; font-family: Verdana, Geneva, Tahoma, sans-serif; padding: 1rem 0 0 3rem;">
-                                        1600</h3>
-                                </div>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-
-            </ul>
-            <ul class="links">
-                <li><a class="item" href="../index.html">Home</a></li>
-                <li><a class="item" href="#">Acerca De Nosotros</a></li>
-                <li><a class="item" href="#">Catalogo</a></li>
+  <header>
+    <div class="uk-position-relative">
+      <div class="uk-position-top"
+        uk-sticky="start: 90; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 90">
+        <nav class="uk-navbar-container uk-navbar-transparent">
+          <div class="uk-container">
+            <nav uk-navbar class="navbar_origin">
+              <a href="../index.html" class="logo">
+                <img src="../assets/images/logos/Bubble_logo.png" alt="Bubble Chocolateria" class="item_logo">
+              </a>
+              <ul class="links">
+                <li><a class="item" href="../index.html#historia">ACERCA DE NOSOTROS</a></li>
+                <li><a class="item" href="../pages/catalogo.html">CATÁLOGO</a></li>
                 <li>
-                    <a class="item" href="./aaa.html">
-                        <input id="btn_producto_1" class="btn_bar" type="button" value="Login">
-                    </a>
+                  <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-flip" uk-icon="icon: cart; ratio: 1.3" style="color: #fff;"></button>
                 </li>
-            </ul>
+                <li>
+                  <a class="item" href="#">
+                    <input id="btn_producto_1" class="btn_bar" type="button" value="LOGIN">
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </nav>
-    </header class="fondotwo">
-    <main class="main_content">
-        <svg class="waveback" id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 490"
-            version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
-                    <stop stop-color="rgba(198.401, 62.765, 7.351, 1)" offset="0%"></stop>
-                    <stop stop-color="rgba(255, 193.353, 124.621, 1)" offset="100%"></stop>
-                </linearGradient>
-            </defs>
-            <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
-                d="M0,98L80,147C160,196,320,294,480,277.7C640,261,800,131,960,130.7C1120,131,1280,261,1440,277.7C1600,294,1760,196,1920,155.2C2080,114,2240,131,2400,147C2560,163,2720,180,2880,228.7C3040,278,3200,359,3360,351.2C3520,343,3680,245,3840,204.2C4000,163,4160,180,4320,204.2C4480,229,4640,261,4800,236.8C4960,212,5120,131,5280,155.2C5440,180,5600,310,5760,326.7C5920,343,6080,245,6240,212.3C6400,180,6560,212,6720,228.7C6880,245,7040,245,7200,245C7360,245,7520,245,7680,261.3C7840,278,8000,310,8160,285.8C8320,261,8480,180,8640,163.3C8800,147,8960,196,9120,220.5C9280,245,9440,245,9600,253.2C9760,261,9920,278,10080,236.8C10240,196,10400,98,10560,49C10720,0,10880,0,11040,73.5C11200,147,11360,294,11440,367.5L11520,441L11520,490L11440,490C11360,490,11200,490,11040,490C10880,490,10720,490,10560,490C10400,490,10240,490,10080,490C9920,490,9760,490,9600,490C9440,490,9280,490,9120,490C8960,490,8800,490,8640,490C8480,490,8320,490,8160,490C8000,490,7840,490,7680,490C7520,490,7360,490,7200,490C7040,490,6880,490,6720,490C6560,490,6400,490,6240,490C6080,490,5920,490,5760,490C5600,490,5440,490,5280,490C5120,490,4960,490,4800,490C4640,490,4480,490,4320,490C4160,490,4000,490,3840,490C3680,490,3520,490,3360,490C3200,490,3040,490,2880,490C2720,490,2560,490,2400,490C2240,490,2080,490,1920,490C1760,490,1600,490,1440,490C1280,490,1120,490,960,490C800,490,640,490,480,490C320,490,160,490,80,490L0,490Z">
-            </path>
-            <defs>
-                <linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0">
-                    <stop stop-color="rgba(212.061, 75.875, 0, 1)" offset="0%"></stop>
-                    <stop stop-color="rgba(250.767, 158.761, 132.462, 1)" offset="100%"></stop>
-                </linearGradient>
-            </defs>
-            <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-1)"
-                d="M0,392L80,367.5C160,343,320,294,480,302.2C640,310,800,376,960,351.2C1120,327,1280,212,1440,179.7C1600,147,1760,196,1920,220.5C2080,245,2240,245,2400,236.8C2560,229,2720,212,2880,179.7C3040,147,3200,98,3360,65.3C3520,33,3680,16,3840,16.3C4000,16,4160,33,4320,73.5C4480,114,4640,180,4800,171.5C4960,163,5120,82,5280,89.8C5440,98,5600,196,5760,236.8C5920,278,6080,261,6240,236.8C6400,212,6560,180,6720,179.7C6880,180,7040,212,7200,212.3C7360,212,7520,180,7680,147C7840,114,8000,82,8160,122.5C8320,163,8480,278,8640,326.7C8800,376,8960,359,9120,367.5C9280,376,9440,408,9600,424.7C9760,441,9920,441,10080,416.5C10240,392,10400,343,10560,294C10720,245,10880,196,11040,212.3C11200,229,11360,310,11440,351.2L11520,392L11520,490L11440,490C11360,490,11200,490,11040,490C10880,490,10720,490,10560,490C10400,490,10240,490,10080,490C9920,490,9760,490,9600,490C9440,490,9280,490,9120,490C8960,490,8800,490,8640,490C8480,490,8320,490,8160,490C8000,490,7840,490,7680,490C7520,490,7360,490,7200,490C7040,490,6880,490,6720,490C6560,490,6400,490,6240,490C6080,490,5920,490,5760,490C5600,490,5440,490,5280,490C5120,490,4960,490,4800,490C4640,490,4480,490,4320,490C4160,490,4000,490,3840,490C3680,490,3520,490,3360,490C3200,490,3040,490,2880,490C2720,490,2560,490,2400,490C2240,490,2080,490,1920,490C1760,490,1600,490,1440,490C1280,490,1120,490,960,490C800,490,640,490,480,490C320,490,160,490,80,490L0,490Z">
-            </path>
-            <defs>
-                <linearGradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0">
-                    <stop stop-color="rgba(148.311, 63.113, 0, 1)" offset="0%"></stop>
-                    <stop stop-color="rgba(250.767, 104.198, 70.169, 1)" offset="100%"></stop>
-                </linearGradient>
-            </defs>
-            <path style="transform:translate(0, 100px); opacity:1" fill="url(#sw-gradient-2)"
-                d="M0,294L80,318.5C160,343,320,392,480,351.2C640,310,800,180,960,155.2C1120,131,1280,212,1440,212.3C1600,212,1760,131,1920,155.2C2080,180,2240,310,2400,359.3C2560,408,2720,376,2880,302.2C3040,229,3200,114,3360,106.2C3520,98,3680,196,3840,228.7C4000,261,4160,229,4320,253.2C4480,278,4640,359,4800,400.2C4960,441,5120,441,5280,367.5C5440,294,5600,147,5760,130.7C5920,114,6080,229,6240,285.8C6400,343,6560,343,6720,343C6880,343,7040,343,7200,302.2C7360,261,7520,180,7680,163.3C7840,147,8000,196,8160,253.2C8320,310,8480,376,8640,334.8C8800,294,8960,147,9120,122.5C9280,98,9440,196,9600,212.3C9760,229,9920,163,10080,171.5C10240,180,10400,261,10560,269.5C10720,278,10880,212,11040,155.2C11200,98,11360,49,11440,24.5L11520,0L11520,490L11440,490C11360,490,11200,490,11040,490C10880,490,10720,490,10560,490C10400,490,10240,490,10080,490C9920,490,9760,490,9600,490C9440,490,9280,490,9120,490C8960,490,8800,490,8640,490C8480,490,8320,490,8160,490C8000,490,7840,490,7680,490C7520,490,7360,490,7200,490C7040,490,6880,490,6720,490C6560,490,6400,490,6240,490C6080,490,5920,490,5760,490C5600,490,5440,490,5280,490C5120,490,4960,490,4800,490C4640,490,4480,490,4320,490C4160,490,4000,490,3840,490C3680,490,3520,490,3360,490C3200,490,3040,490,2880,490C2720,490,2560,490,2400,490C2240,490,2080,490,1920,490C1760,490,1600,490,1440,490C1280,490,1120,490,960,490C800,490,640,490,480,490C320,490,160,490,80,490L0,490Z">
-            </path>
-        </svg>
-        <section id="productos" class="container">
-            <div class="grid">
-                <div class="card">
-                    <div class="cajaima">
-                        <img class="card_img" src="../assets/images/catalogo_1.jpg" alt="">
-                    </div>
-                    <h2 class="card_titulo">Gomitas Gummy Bears</h2>
-                    <div class="card_cajatext">
-                        <p class="texto">$1400</p>
-                    </div>
-                    <div class="card_button_box">
-                        <input onclick="AgregarProducto(0)" class="card_button" type="button" value="Agregar Articulo">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cajaima">
-                        <img class="card_img" src="../assets/images/catalogo_2.webp" alt="">
-                    </div>
-                    <h2 class="card_titulo">Trolli Candy Corns</h2>
-                    <div class="card_cajatext">
-                        <p class="texto">$1000</p>
-                    </div>
-                    <div class="card_button_box">
-                        <input onclick="AgregarProducto(1)" class="card_button" type="button" value="Agregar Articulo">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cajaima">
-                        <img class="card_img" src="../assets/images/catalogo_3.webp" alt="">
-                    </div>
-                    <h2 class="card_titulo">Deliket Jelly Beans</h2>
-                    <div class="card_cajatext">
-                        <p class="texto">$1600</p>
-                    </div>
-                    <div class="card_button_box">
-                        <input onclick="AgregarProducto(2)" class="card_button" type="button" value="Agregar Articulo">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cajaima">
-                        <img class="card_img" src="../assets/images/catalogo_4.webp" alt="">
-                    </div>
-                    <h2 class="card_titulo">Gomitas Sweet Tars</h2>
-                    <div class="card_cajatext">
-                        <p class="texto">$1300</p>
-                    </div>
-                    <div class="card_button_box">
-                        <input onclick="AgregarProducto(3)" class="card_button" type="button" value="Agregar Articulo">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cajaima">
-                        <img class="card_img" src="../assets/images/catalogo_5.webp" alt="">
-                    </div>
-                    <h2 class="card_titulo">Sugus Beans</h2>
-                    <div class="card_cajatext">
-                        <p class="texto">$2000</p>
-                    </div>
-                    <div class="card_button_box">
-                        <input onclick="AgregarProducto(4)" class="card_button" type="button" value="Agregar Articulo">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cajaima">
-                        <img class="card_img" src="../assets/images/catalogo_6.png" alt="">
-                    </div>
-                    <h2 class="card_titulo">Flynn Paff Chupetines</h2>
-                    <div class="card_cajatext">
-                        <p class="texto">$3000</p>
-                    </div>
-                    <div class="card_button_box">
-                        <input onclick="AgregarProducto(5)" class="card_button" type="button" value="Agregar Articulo">
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="container-footer">
-            <div class="container-footer_division">
-                <h3>horarios de atencion</h3>
-                <p>8:00 a 22:00</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque neque, ipsa dolor odio voluptatum
-                    voluptas velit, officia aspernatur voluptate molestiae nam facere porro esse enim earum sunt nihil
-                    vel tenetur.
-                </p>
-            </div>
-            <div class="container-footer_division">
-                <h3>Social Media</h3>
-            </div>
+      </div>
+    </div>
+  </header>
+  <main class="content_main_catalogo">
+    <section class="separador_catalogo_page"></section>
+    <section class="off_canvas">
+      <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+        <div class="uk-offcanvas-bar">
+
+          <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+          <h3>Carrito</h3>
+
+          <p>carrito items</p>
+
         </div>
-    </footer>
-    <script defer src="../js/main.js"></script>
-    <script defer src="../js/valores.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+      </div>
+    </section>
+    <section class="mainshop">
+      <div class="mainshop_part1">
+
+      </div>
+      <div class="mainshop_part2">
+        <div class="mainshop2_grid">
+          <div class="card_shop">
+            <img src="../assets/images/items/1bombones_surtidos.webp" alt="" class="card_img">
+            <div class="card_titulo_base">
+              <h2 class="card_titulo">Cart titulo</h2>
+            </div>
+            <div class="card_info_base">
+              <p class="card_info">costo 3000</p>
+            </div>
+            <div class="card_button_box">
+              <input onclick="AgregarProducto(0)" class="card_button" type="button" value="Agregar Articulo">
+            </div>
+          </div>
+          <div class="card_shop">
+            <img src="../assets/images/items/2bombones_dulce_de_leche_250g.webp" alt="" class="card_img">
+            <div class="card_titulo_base">
+              <h2 class="card_titulo">Cart titulo</h2>
+            </div>
+            <div class="card_info_base">
+              <p class="card_info">costo 3000</p>
+            </div>
+            <div class="card_button_box">
+              <input onclick="AgregarProducto(1)" class="card_button" type="button" value="Agregar Articulo">
+            </div>
+          </div>
+          <div class="card_shop">
+            <img src="../assets/images/items/3bombones_dulce_de_leche_300g.webp" alt="" class="card_img">
+            <div class="card_titulo_base">
+              <h2 class="card_titulo">Cart titulo</h2>
+            </div>
+            <div class="card_info_base">
+              <p class="card_info">costo 3000</p>
+            </div>
+            <div class="card_button_box">
+              <input onclick="AgregarProducto(2)" class="card_button" type="button" value="Agregar Articulo">
+            </div>
+          </div>
+          <div class="card_shop">
+            <img src="../assets/images/items/4bombones_dulce_de_leche_600g.webp" alt="" class="card_img">
+            <div class="card_titulo_base">
+              <h2 class="card_titulo">Cart titulo</h2>
+            </div>
+            <div class="card_info_base">
+              <p class="card_info">costo 3000</p>
+            </div>
+            <div class="card_button_box">
+              <input onclick="AgregarProducto(3)" class="card_button" type="button" value="Agregar Articulo">
+            </div>
+          </div>
+          <div class="card_shop">
+            <img src="../assets/images/items/5bombones_surtidos_1k.webp" alt="" class="card_img">
+            <div class="card_titulo_base">
+              <h2 class="card_titulo">Cart titulo</h2>
+            </div>
+            <div class="card_info_base">
+              <p class="card_info">costo 3000</p>
+            </div>
+            <div class="card_button_box">
+              <input onclick="AgregarProducto(4)" class="card_button" type="button" value="Agregar Articulo">
+            </div>
+          </div>
+          <div class="card_shop">
+            <img src="../assets/images/items/6bombones_surtidos_100g.webp" alt="" class="card_img">
+            <div class="card_titulo_base">
+              <h2 class="card_titulo">Cart titulo</h2>
+            </div>
+            <div class="card_info_base">
+              <p class="card_info">costo 3000</p>
+            </div>
+            <div class="card_button_box">
+              <input onclick="AgregarProducto(5)" class="card_button" type="button" value="Agregar Articulo">
+            </div>
+          </div>
+          <div class="card_shop">
+            <img src="../assets/images/items/7crocante_1000g.webp" alt="" class="card_img">
+            <div class="card_titulo_base">
+              <h2 class="card_titulo">Cart titulo</h2>
+            </div>
+            <div class="card_info_base">
+              <p class="card_info">costo 3000</p>
+            </div>
+            <div class="card_button_box">
+              <input onclick="AgregarProducto(6)" class="card_button" type="button" value="Agregar Articulo">
+            </div>
+          </div>
+          <div class="card_shop">
+            <img src="../assets/images/items/8bombones_dulce_de_leche_60g.webp" alt="" class="card_img">
+            <div class="card_titulo_base">
+              <h2 class="card_titulo">Cart titulo</h2>
+            </div>
+            <div class="card_info_base">
+              <p class="card_info">costo 3000</p>
+            </div>
+            <div class="card_button_box">
+              <input onclick="AgregarProducto(7)" class="card_button" type="button" value="Agregar Articulo">
+            </div>
+          </div>
+          <div class="card_shop">
+            <img src="../assets/images/items/9tubo_Guijarros_de_almendra.jpg" alt="" class="card_img">
+            <div class="card_titulo_base">
+              <h2 class="card_titulo">Cart titulo</h2>
+            </div>
+            <div class="card_info_base">
+              <p class="card_info">costo 3000</p>
+            </div>
+            <div class="card_button_box">
+              <input onclick="AgregarProducto(8)" class="card_button" type="button" value="Agregar Articulo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+  <script defer src="../js/main.js"></script>
+  <script defer src="../js/valores.js"></script>
+  <script defer src="../js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.4/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.4/dist/js/uikit-icons.min.js"></script>
 </body>
 
 

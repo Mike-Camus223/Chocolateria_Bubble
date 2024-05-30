@@ -1,9 +1,10 @@
 
 
-// lISTA DE PRODUCTOS (GOLOSINAS) //
+// lISTA DE PRODUCTOS (Chocolates) //
 
   const productos = [
     {id:1,
+      tipo:"Bombones",
       nombre:"Gomitas Gummy Bears",
       precio: 1400,
       img:"../assets/images/catalogo_1.jpg",

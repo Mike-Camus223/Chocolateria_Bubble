@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bubble Chocolateria - Home</title>
+  <title>Chocolateria Bubble - Home</title>
+  <link rel="icon" href="./assets/images/icons/bubble_icon.png" sizes="32x32" type="icono">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,26 +16,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.4/dist/css/uikit.min.css" />
-
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-  <header class="header_container">
-    <nav class="navbar">
-      <div class="logo">
-        <img src="./assets/images/logos/logo_chocolateria.png" alt="Bubble Chocolateria" class="item_logo">
+  <header>
+    <div class="uk-position-relative">
+      <div class="uk-position-top"
+        uk-sticky="start: 90; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; top: 90">
+        <nav class="uk-navbar-container uk-navbar-transparent">
+          <div class="uk-container">
+            <nav uk-navbar class="navbar_origin">
+              <a href="./index.html" class="logo">
+                <img src="./assets/images/logos/Bubble_logo.png" alt="Bubble Chocolateria" class="item_logo">
+              </a>
+              <ul class="links">
+                <li><a class="item" href="#historia">ACERCA DE NOSOTROS</a></li>
+                <li><a class="item" href="./pages/catalogo.html">CATÁLOGO</a></li>
+                <li>
+                  <a class="item" href="#">
+                    <input id="btn_producto_1" class="btn_bar" type="button" value="LOGIN">
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </nav>
       </div>
-      <ul class="links">
-        <li><a class="item" href="#">ACERCA DE NOSOTROS</a></li>
-        <li><a class="item" href="./pages/catalogo.html">CATALOGO</a></li>
-        <li>
-          <a class="item" href="#">
-            <input id="btn_producto_1" class="btn_bar" type="button" value="LOGIN">
-          </a>
-        </li>
-      </ul>
-    </nav>
+    </div>
   </header>
   <main class="content_main">
     <section class="firts">
@@ -108,7 +117,7 @@
         <div class="third_base2">
           <div class="third_base2_a">
             <div class="base2">
-              <img class="base2_img" src="./assets/images/icons/chocolate-1.webp" alt="">
+              <img class="base2_img" src="./assets/images/icons/chocolate-1.png" alt="">
               <div class="base2_textbase">
                 <h3 class="base2_titulo">100% Cacao Puro</h3>
                 <p class="base2_parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ducimus rem quod
@@ -150,7 +159,7 @@
               </div>
             </div>
             <div class="base3">
-              <img class="base3_img" src="./assets/images/icons/chocolate-6.webp" alt="">
+              <img class="base3_img" src="./assets/images/icons/chocolate-6.png" alt="">
               <div class="base3_textbase">
                 <h3 class="base3_titulo">Hecho con Amor</h3>
                 <p class="base3_parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ducimus rem quod
@@ -194,48 +203,56 @@
       <div class="galeria">
         <h2 class="galeria_titulo">Nuestra Galeria</h2>
       </div>
-      <!-- <div class="galeria_grid">
-        <div class="galeria_grid_item">
-          <img src="./assets/images/galeria/galeria1.jpg" alt="" class="galeria_grid_item_img">
-        </div>
-        <div class="galeria_grid_item">
-          <img src="./assets/images/galeria/galeria2.jpg" alt="" class="galeria_grid_item_img">
-        </div>
-        <div class="galeria_grid_item">
-          <img src="./assets/images/galeria/galeria3.jpg" alt="" class="galeria_grid_item_img">
-        </div>
-        <div class="galeria_grid_item">
-          <img src="./assets/images/galeria/galeria4.jpg" alt="" class="galeria_grid_item_img">
-        </div>
-        <div class="galeria_grid_item">
-          <img src="./assets/images/galeria/galeria5.jpg" alt="" class="galeria_grid_item_img">
-        </div>
-        <div class="galeria_grid_item">
-          <img src="./assets/images/galeria/galeria6.jpg" alt="" class="galeria_grid_item_img">
-        </div>
-        <div class="galeria_grid_item">
-          <img src="./assets/images/galeria/galeria7.jpg" alt="" class="galeria_grid_item_img">
-        </div>
-        <div class="galeria_grid_item">
-          <img src="./assets/images/galeria/galeria8.jpg" alt="" class="galeria_grid_item_img">
-        </div>
-      </div> -->
-      <!-- adasdasd -->
-      <div class="uk-child-width-1-3@m" uk-grid uk-lightbox="animation: slide">
-        <div>
-          <a class="uk-inline" href="./assets/images/galeria/galeria1.jpg" data-caption="Caption 1">
-            <img src="./assets/images/galeria/galeria1.jpg" width="1800" height="1200" alt="">
-          </a>
-        </div>
-        <div>
-          <a class="uk-inline" href="./assets/images/galeria/galeria2.jpg" data-caption="Caption 2">
-            <img src="./assets/images/galeria/galeria2.jpg" width="1800" height="1200" alt="">
-          </a>
-        </div>
-        <div>
-          <a class="uk-inline" href="./assets/images/galeria/galeria3.jpg" data-caption="Caption 3">
-            <img src="./assets/images/galeria/galeria3.jpg" width="1800" height="1200" alt="">
-          </a>
+      <div class="uk-container" style="justify-content: center;">
+        <div class="uk-child-@m galeria_grid" uk-grid uk-lightbox="animation: slide">
+          <div>
+            <a class="uk-inline galeria_grid_item" href="./assets/images/galeria/galeria1.jpg" data-caption="Caption 1">
+              <img class="galeria_grid_item_img" src="./assets/images/galeria/galeria1.jpg" width="1800" height="1200"
+                alt="Caption 1">
+            </a>
+          </div>
+          <div class="grid_galeria_pursuit">
+            <a class="uk-inline galeria_grid_item" href="./assets/images/galeria/galeria2.jpg" data-caption="Caption 2">
+              <img class="galeria_grid_item_img" src="./assets/images/galeria/galeria2.jpg" width="1800" height="1200"
+                alt="Caption 2">
+            </a>
+          </div>
+          <div class="grid_galeria_pursuit">
+            <a class="uk-inline galeria_grid_item" href="./assets/images/galeria/galeria3.jpg" data-caption="Caption 3">
+              <img class="galeria_grid_item_img" src="./assets/images/galeria/galeria3.jpg" width="1800" height="1200"
+                alt="Caption 3">
+            </a>
+          </div>
+          <div class="grid_galeria_pursuit">
+            <a class="uk-inline galeria_grid_item" href="./assets/images/galeria/galeria4.jpg" data-caption="Caption 4">
+              <img class="galeria_grid_item_img" src="./assets/images/galeria/galeria4.jpg" width="1800" height="1200"
+                alt="Caption 4">
+            </a>
+          </div>
+          <div>
+            <a class="uk-inline galeria_grid_item" href="./assets/images/galeria/galeria5.jpg" data-caption="Caption 5">
+              <img class="galeria_grid_item_img" src="./assets/images/galeria/galeria5.jpg" width="1800" height="1200"
+                alt="Caption 5">
+            </a>
+          </div>
+          <div>
+            <a class="uk-inline galeria_grid_item" href="./assets/images/galeria/galeria6.jpg" data-caption="Caption 6">
+              <img class="galeria_grid_item_img" src="./assets/images/galeria/galeria6.jpg" width="1800" height="1200"
+                alt="Caption 6">
+            </a>
+          </div>
+          <div>
+            <a class="uk-inline galeria_grid_item" href="./assets/images/galeria/galeria7.jpg" data-caption="Caption 7">
+              <img class="galeria_grid_item_img" src="./assets/images/galeria/galeria7.jpg" width="1800" height="1200"
+                alt="Caption 7">
+            </a>
+          </div>
+          <div>
+            <a class="uk-inline galeria_grid_item" href="./assets/images/galeria/galeria8.jpg" data-caption="Caption 8">
+              <img class="galeria_grid_item_img" src="./assets/images/galeria/galeria8.jpg" width="1800" height="1200"
+                alt="Caption 8">
+            </a>
+          </div>
         </div>
       </div>
     </section>

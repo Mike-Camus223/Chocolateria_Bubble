@@ -56,3 +56,6 @@ function mostrarCarrito() {
     total.textContent = `$${totalPrecio}`;
 }
 
+
+
+
