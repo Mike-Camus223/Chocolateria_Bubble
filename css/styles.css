@@ -852,10 +852,10 @@ footer {
     border: 1px solid #ff0000;
 }
 
-.uk-button-default {
+.filter_bar {
     background-color: #fff;
 } 
 
-.uk-button-default:hover {
+.filter_bar:hover {
     background-color: #fff;
 }
