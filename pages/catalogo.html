@@ -34,7 +34,8 @@
                 <li><a class="item" href="../index.html#historia">ACERCA DE NOSOTROS</a></li>
                 <li><a class="item" href="../pages/catalogo.html">CATÁLOGO</a></li>
                 <li>
-                  <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-flip" uk-icon="icon: cart; ratio: 1.3" style="color: #fff;"></button>
+                  <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-flip"
+                    uk-icon="icon: cart; ratio: 1.3" style="color: #fff;"></button>
                 </li>
                 <li>
                   <a class="item" href="#">
@@ -65,84 +66,117 @@
     </section>
     <section class="mainshop">
       <div class="mainshop_part1">
-
+        <div class="uk-margin" uk-form-custom="target: > * > span:first">
+          <label class="uk-form-label">Filtrar por Categoría</label>
+          <div class="uk-form-controls" >
+            <div class="uk-inline">
+              <button class="uk-button uk-button-default" type="button" id="boton-desplegable">
+                Seleccionar Categorías <span uk-icon="icon: chevron-down"></span>
+              </button>
+              <div uk-dropdown="mode: click">
+                <ul class="uk-nav uk-dropdown-nav">
+                  <li><input type="checkbox" id="alfajores" class="uk-checkbox"><label for="alfajores">Alfajores</label></li>
+                  <li><input type="checkbox" id="bombones" class="uk-checkbox"><label for="bombones">Bombones</label></li>
+                  <li><input type="checkbox" id="guijarros" class="uk-checkbox"><label for="guijarros">Guijarros</label></li>
+                  <li><input type="checkbox" id="tabletas" class="uk-checkbox"><label for="tabletas">Tabletas</label></li>
+                  <li><input type="checkbox" id="novedades" class="uk-checkbox"><label for="novedades">Novedades</label></li>
+                </ul>
+              </div>
+            </div>
+            <button class="uk-button uk-button-danger filter_button">Filtrar</button>
+          </div>
+        </div>
       </div>
       <div class="mainshop_part2">
         <div class="mainshop2_grid">
           <div class="card_shop">
-            <img src="../assets/images/items/1barras_duo.jpg" alt="" class="card_img">
+            <div class="card_img_base">
+              <img src="../assets/images/items/1barras_duo.jpg" alt="" class="card_img">
+            </div>
             <div class="card_titulo_base">
-              <h2 class="card_titulo">Barras Duo</h2>
+              <h2 class="card_titulo">Barras de Dúo</h2>
             </div>
             <div class="card_info_base">
               <p class="card_info">costo $8.000</p>
             </div>
             <div class="card_button_box">
-              <input onclick="AgregarProducto(0)" class="card_button" type="button" value="Agregar Articulo">
+              <input onclick="AgregarProducto(0)" class="card_button" type="button" value="Agregar Artículo">
             </div>
           </div>
           <div class="card_shop">
-            <img src="../assets/images/items/2bombones_dulce_de_leche_250g.webp" alt="" class="card_img">
+            <div class="card_img_base">
+              <img src="../assets/images/items/2bombones_dulce_de_leche_250g.webp" alt="" class="card_img">
+            </div>
             <div class="card_titulo_base">
-              <h2 class="card_titulo">Bombones de dulce de leche 250g</h2>
+              <h2 class="card_titulo">Bombones de Dulce de Leche 250g</h2>
             </div>
             <div class="card_info_base">
               <p class="card_info">costo $12.400</p>
             </div>
             <div class="card_button_box">
-              <input onclick="AgregarProducto(1)" class="card_button" type="button" value="Agregar Articulo">
+              <input onclick="AgregarProducto(1)" class="card_button" type="button" value="Agregar Artículo">
             </div>
           </div>
           <div class="card_shop">
-            <img src="../assets/images/items/3bombones_dulce_de_leche_300g.webp" alt="" class="card_img">
+            <div class="card_img_base">
+              <img src="../assets/images/items/3bombones_dulce_de_leche_300g.webp" alt="" class="card_img">
+            </div>
             <div class="card_titulo_base">
-              <h2 class="card_titulo">Bombones de dulce de leche 300g</h2>
+              <h2 class="card_titulo">Bombones de Dulce de Leche 300g</h2>
             </div>
             <div class="card_info_base">
               <p class="card_info">costo $14.900</p>
             </div>
             <div class="card_button_box">
-              <input onclick="AgregarProducto(2)" class="card_button" type="button" value="Agregar Articulo">
+              <input onclick="AgregarProducto(2)" class="card_button" type="button" value="Agregar Artículo">
             </div>
           </div>
           <div class="card_shop">
-            <img src="../assets/images/items/4bombones_dulce_de_leche_600g.webp" alt="" class="card_img">
+            <div class="card_img_base">
+              <img src="../assets/images/items/4bombones_dulce_de_leche_600g.webp" alt="" class="card_img">
+            </div>
             <div class="card_titulo_base">
-              <h2 class="card_titulo">Bombones de dulce de leche 600g</h2>
+              <h2 class="card_titulo">Bombones de Dulce de Leche 600g</h2>
             </div>
             <div class="card_info_base">
               <p class="card_info">costo $30.000</p>
             </div>
             <div class="card_button_box">
-              <input onclick="AgregarProducto(3)" class="card_button" type="button" value="Agregar Articulo">
+              <input onclick="AgregarProducto(3)" class="card_button" type="button" value="Agregar Artículo">
             </div>
           </div>
           <div class="card_shop">
-            <img src="../assets/images/items/5bombones_surtidos_1k.webp" alt="" class="card_img">
+            <div class="card_img_base">
+              <img src="../assets/images/items/5bombones_surtidos_1k.webp" alt="" class="card_img">
+            </div>
             <div class="card_titulo_base">
-              <h2 class="card_titulo">Bombones Surtidos 1k</h2>
+              <h2 class="card_titulo">Bombones Surtidos 1kg</h2>
             </div>
             <div class="card_info_base">
               <p class="card_info">costo $49.600</p>
             </div>
             <div class="card_button_box">
-              <input onclick="AgregarProducto(4)" class="card_button" type="button" value="Agregar Articulo">
+              <input onclick="AgregarProducto(4)" class="card_button" type="button" value="Agregar Artículo">
             </div>
           </div>
           <div class="card_shop">
-            <img src="../assets/images/items/6bombones_surtidos_100g.webp" alt="" class="card_img">
+            <div class="card_img_base">
+              <img src="../assets/images/items/6bombones_surtidos_100g.webp" alt="" class="card_img">
+            </div>
             <div class="card_titulo_base">
-              <h2 class="card_titulo">Bombones surtidos 500g</h2>
+              <h2 class="card_titulo">Bombones Surtidos 500g</h2>
             </div>
             <div class="card_info_base">
               <p class="card_info">costo $24.800</p>
             </div>
             <div class="card_button_box">
-              <input onclick="AgregarProducto(5)" class="card_button" type="button" value="Agregar Articulo">
+              <input onclick="AgregarProducto(5)" class="card_button" type="button" value="Agregar Artículo">
             </div>
           </div>
           <div class="card_shop">
-            <img src="../assets/images/items/7crocante_1000g.webp" alt="" class="card_img">
+            <div class="card_img_base">
+              <img src="../assets/images/items/7crocante_1000g.webp" alt="" class="card_img">
+            </div>
             <div class="card_titulo_base">
               <h2 class="card_titulo">Chocolate Crocante 1kg</h2>
             </div>
@@ -150,11 +184,13 @@
               <p class="card_info">costo $46.000</p>
             </div>
             <div class="card_button_box">
-              <input onclick="AgregarProducto(6)" class="card_button" type="button" value="Agregar Articulo">
+              <input onclick="AgregarProducto(6)" class="card_button" type="button" value="Agregar Artículo">
             </div>
           </div>
           <div class="card_shop">
-            <img src="../assets/images/items/8alfajor.jpg" alt="" class="card_img">
+            <div class="card_img_base">
+              <img src="../assets/images/items/8alfajor.jpg" alt="" class="card_img">
+            </div>
             <div class="card_titulo_base">
               <h2 class="card_titulo">Alfajor</h2>
             </div>
@@ -162,11 +198,13 @@
               <p class="card_info">costo $2.200</p>
             </div>
             <div class="card_button_box">
-              <input onclick="AgregarProducto(7)" class="card_button" type="button" value="Agregar Articulo">
+              <input onclick="AgregarProducto(7)" class="card_button" type="button" value="Agregar Artículo">
             </div>
           </div>
           <div class="card_shop">
-            <img src="../assets/images/items/9tubo_Guijarros_de_almendra.jpg" alt="" class="card_img">
+            <div class="card_img_base">
+              <img src="../assets/images/items/9tubo_Guijarros_de_almendra.jpg" alt="" class="card_img">
+            </div>
             <div class="card_titulo_base">
               <h2 class="card_titulo">Tubo Guijarros de Almendra</h2>
             </div>
@@ -174,7 +212,7 @@
               <p class="card_info">costo $8.000</p>
             </div>
             <div class="card_button_box">
-              <input onclick="AgregarProducto(8)" class="card_button" type="button" value="Agregar Articulo">
+              <input onclick="AgregarProducto(8)" class="card_button" type="button" value="Agregar Artículo">
             </div>
           </div>
         </div>
