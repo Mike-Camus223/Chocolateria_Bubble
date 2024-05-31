@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
         } else if (checkboxesSeleccionados.length === 1) {
             botonDesplegable.textContent = checkboxesSeleccionados[0].nextElementSibling.textContent;
         } else {
-            botonDesplegable.textContent = checkboxesSeleccionados.length + " Selecciones";
+            botonDesplegable.textContent = checkboxesSeleccionados.length + " Opciones Seleccionadas";
         }
     }
 });
