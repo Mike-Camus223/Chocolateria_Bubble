@@ -692,36 +692,119 @@ footer {
     background-color: #5d4b3f;
 }
 
-.mainshop {
+/* pagina catalogo contenido base */
+
+.mainshop_base {
     display: flex;
     width: 100%;
     height: 100%;
     background-color: #f3f1dc;
     justify-content: center;
-    align-items: center;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .mainshop_part1 {
+    display: flex;
+    justify-content: flex-end;
     width: 30%;
-    height: 100%;
+    gap: 30px;
+    padding-top: 20px;
+}
+
+/* Zona filter */
+
+.filter_button {
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    font-family: "Raleway", sans-serif;
+    background-color: #571b1b;
+    text-transform: none;
+    color: #fff;
+    transition: .1s ease-in-out;
+}
+
+.filter_button:hover {
+    background-color: #a54747;
+}
+
+.filter_button:focus {
+    border: 1px solid #ff0000;
+}
+
+.filter_bar {
+    background-color: #fff;
+}
+
+.filter_bar:hover {
+    background-color: #fff;
+}
+
+.uk-button {
+    display: flex;
+    width: 252.81px;
+    height: 40px;
+    color: #3e342d;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: none;
+}
+
+.uk-checkbox:checked {
+    background-color: #571b1b;
+}
+
+.uk-checkbox:focus {
+    border: 1px solid #571b1b;
+}
+
+.uk-checkbox:checked:focus, .uk-checkbox:indeterminate:focus, .uk-radio:checked:focus {
+    background-color: #571b1b;
+}
+
+.uk-form-custom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.uk-form-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.uk-form-label {
+    font-size: 19px;
+    font-family: "Raleway", sans-serif;
+    color: #5d4b3f;
+    font-weight: 600;
+}
+
+label {
+    font-size: 16px;
+    color: #5d4b3f;
+    padding-left: 3px;
 }
 
 .mainshop_part2 {
-    width: 70%;
+    width: 100%;
     display: flex;
-    padding: 20px;
-    min-height: 100vh;
+    padding: 40px;
+    margin-right: 0 auto;
+    height: 100%;
     justify-content: center;
+    gap: 30px;
 }
 
 .mainshop2_grid {
     display: grid;
     grid-template-columns: repeat(3, 277px);
     gap: 20px;
-    width: 80%;
-    justify-content: center;
+    width: 70%;
+    justify-content: flex-start;
 }
 
 .card_shop {
@@ -780,7 +863,6 @@ footer {
 }
 
 .card_info {
-    font-family: "Raleway", sans-serif;
     font-size: 16px;
     font-weight: 600;
     color: #3e342d;
@@ -833,29 +915,15 @@ footer {
     background-color: #3d3b3b;
 }
 
-/* zona filter */
-
-.filter_button {
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 5px;
-    font-family: "Raleway", sans-serif;
-    background-color: #571b1b;
-    text-transform: none;
+.boton-carrito {
+    border: none;
 }
 
-.filter_button:hover {
-    background-color: #a54747;
+svg {
+    transition: all .3s;
 }
 
-.filter_button:focus {
-    border: 1px solid #ff0000;
+svg:hover {
+    color: #fcb900;
 }
 
-.filter_bar {
-    background-color: #fff;
-} 
-
-.filter_bar:hover {
-    background-color: #fff;
-}
