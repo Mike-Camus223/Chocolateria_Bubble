@@ -46,34 +46,62 @@
     </div>
   </header>
   <main class="content_main">
-    <section class="firts">
-      <img class="fondo" src="./assets/images/logos/fondo_chocolate.jpg" alt="">
-      <h1>
-        <span class="titulo_firts">Disfruta el</span>
-        <span class="titulo_second">chocolate mágico de Bubble</span>
-      </h1>
-      <p class="titulo_parrafo">
-        En Bubble, disfruta de nuestra variedad de helados, frappés y chocolates irresistibles para todos los gustos.
-        ¡Ven y prueba la magia!
-      </p>
-      <div>
-        <a href="#historia">
-          <button class="button_firts">
-            <p class="button_firts_text">VER NUESTRA HISTORIA</p>
-          </button>
-        </a>
+    <section>
+      <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
+        uk-slideshow="autoplay: true; autoplay-interval: 8000">
+        <div class="uk-slideshow-items">
+          <div class="firts">
+            <img class="fondo_pri" src="./assets/images/logos/fondo_chocolate.jpg" alt="" uk-cover>
+            <div class="uk-position-center uk-position-small uk-text-center">
+              <h2 class="h2-firts">
+                <img class="orlea_pri" src="./assets/images/decorations/Orla_pri1.png" alt="">
+                <span class="texto color-blanco">Disfruta</span>
+                <span class="texto color-amarillo1">
+                  <span class="texto color-amarillo1a">el </span>chocolate</span>
+                <span class="texto color-amarillo2">mágico de</span>
+                <span class="texto color-amarillo3">Bubble</span>
+                <img class="orlea_pri2" src="./assets/images/decorations/Orla_pri1.png" alt="">
+              </h2>
+              <p class="parrafo_pri">En Bubble, disfruta de nuestra variedad de helados,
+                frappés y chocolates irresistibles para todos los gustos.
+                ¡Ven y prueba la magia!</p>
+              <a href="#historia">
+                <button class="button_pri">
+                  <p class="button_pri_text">
+                    VER NUESTRA HISTORIA
+                  </p>
+                </button>
+              </a>
+            </div>
+          </div>
+          <div>
+            <video class="video_firts" src="./assets/images/logos/chocolateloop1.mp4" autoplay loop muted playsinline
+              uk-cover></video>
+          </div>
+          <div>
+            <video class="video_firts" src="./assets/images/logos/chocolateloop2.mp4" autoplay loop muted playsinline
+              uk-cover></video>
+          </div>
+        </div>
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous
+          uk-slideshow-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next
+          uk-slideshow-item="next"></a>
       </div>
     </section>
     <section class="second_catalogo_index">
       <div class="second_part1">
         <div class="annuncent">
+          <div class="orlea3_base">
+            <img src="./assets/images/decorations/Orla 122 B.png" alt="" class="orlea3">
+          </div>
           <h2 class="annuncent_titulo">Nuestro Catálogo</h2>
-          <p class="annuncent_parrafo">¡Bienvenido a Chocolatería Bubble! Sumérgete en un mundo de sabores con nuestro
-            increíble catálogo de
-            delicias artesanales. Desde chocolates irresistibles hasta helados cremosos, refrescantes Frunies y
-            revitalizantes Frappés, en Bubble encontrarás una experiencia única en cada bocado. ¡Descubre más y déjate
-            tentar!
-          </p>
+          <div class="annuncent_parrafo_base">
+            <p class="annuncent_parrafo">¡Bienvenido a Chocolatería Bubble! Disfruta de nuestro catálogo de delicias
+              artesanales: chocolates, helados, Frunies y Frappés. Cada bocado es una experiencia única. ¡Descubre más y
+              déjate tentar!
+            </p>
+          </div>
           <a class="annuncent_link_base" href="./pages/catalogo.html">
             <p class="annuncent_link">VER CATÁLOGO</p>
           </a>
@@ -96,11 +124,6 @@
         </div>
       </div>
     </section>
-    <!-- <div class="separador_inferior">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
-        <path class="elementor-shape-fill" d="M500.2,94.7L0,0v100h1000V0L500.2,94.7z"></path>
-      </svg>
-    </div> -->
     <section class="third_info_index">
       <div class="third_shape">
 
@@ -117,7 +140,7 @@
         <div class="third_base2">
           <div class="third_base2_a">
             <div class="base2">
-              <img class="base2_img" src="./assets/images/icons/chocolate-1.png" alt="">
+              <img class="base2_img" src="./assets/images/icons/01 Cacao puro.png" alt="">
               <div class="base2_textbase">
                 <h3 class="base2_titulo">100% Cacao Puro</h3>
                 <p class="base2_parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ducimus rem quod
@@ -125,7 +148,7 @@
               </div>
             </div>
             <div class="base2">
-              <img class="base2_img" src="./assets/images/icons/chocolate-2.webp" alt="">
+              <img class="base2_img" src="./assets/images/icons/02 Desde 1990.png" alt="">
               <div class="base2_textbase">
                 <h3 class="base2_titulo">Desde 1990</h3>
                 <p class="base2_parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ducimus rem quod
@@ -133,7 +156,7 @@
               </div>
             </div>
             <div class="base2">
-              <img class="base2_img" src="./assets/images/icons/chocolate-3.webp" alt="">
+              <img class="base2_img" src="./assets/images/icons/03 Rcecta (2).png" alt="">
               <div class="base2_textbase">
                 <h3 class="base2_titulo">La Mejor Receta</h3>
                 <p class="base2_parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ducimus rem quod
@@ -143,7 +166,7 @@
           </div>
           <div class="third_base2_b">
             <div class="base3">
-              <img class="base3_img" src="./assets/images/icons/chocolate-4.webp" alt="">
+              <img class="base3_img" src="./assets/images/icons/04 Sabores.png" alt="">
               <div class="base3_textbase">
                 <h3 class="base3_titulo">Sabores Mágicos</h3>
                 <p class="base3_parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ducimus rem quod
@@ -151,7 +174,7 @@
               </div>
             </div>
             <div class="base3">
-              <img class="base3_img" src="./assets/images/icons/chocolate-5.webp" alt="">
+              <img class="base3_img" src="./assets/images/icons/05 Dulce.png" alt="">
               <div class="base3_textbase">
                 <h3 class="base3_titulo">Dulce Creatividad</h3>
                 <p class="base3_parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ducimus rem quod
@@ -159,7 +182,7 @@
               </div>
             </div>
             <div class="base3">
-              <img class="base3_img" src="./assets/images/icons/chocolate-6.png" alt="">
+              <img class="base3_img" src="./assets/images/icons/06 Amor.png" alt="">
               <div class="base3_textbase">
                 <h3 class="base3_titulo">Hecho con Amor</h3>
                 <p class="base3_parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ducimus rem quod
@@ -175,7 +198,7 @@
       <div class="fourth_base1">
         <div class="fourth_grid">
           <div class="fourth_grid_item">
-            <img src="./assets/images/logos/history1.jpg" alt="" class="fourth_grid_item_img">
+            <img src="./assets/images/logos/history1.png" alt="" class="fourth_grid_item_img">
           </div>
           <div class="fourth_grid_item">
             <img src="./assets/images/logos/history2.jpg" alt="" class="fourth_grid_item_img">
@@ -184,14 +207,16 @@
       </div>
       <div class="fourth_base2">
         <div class="historia">
+          <div class="orlea3_base">
+            <img src="./assets/images/decorations/Orla 122 B.png" alt="" class="orlea3">
+          </div>
           <h3 class="historia_titulo">Nuestra Historia</h3>
-          <p class="historia_parrafo">En 1990, en un pequeño pueblo de los Andes llamado Huánuco, Katty Vilcabana fundó
-            "Bubble" con el
-            sueño de compartir la magia del chocolate artesanal. Inspirada por su abuela, Katty utilizó los mejores
-            granos de cacao y mezclas únicas de ingredientes locales para crear delicias irresistibles. Desde entonces,
-            Bubble se ha convertido en un referente de calidad y tradición, llevando alegría y efervescencia en cada
-            bocado de sus exquisitos chocolates
-          </p>
+          <div class="historia_parrafo_base">
+            <p class="historia_parrafo">En 1990, en Huánuco, Katty Vilcabana fundó "Bubble" para compartir la magia del
+              chocolate artesanal. Inspirada por su abuela, usó los mejores granos de cacao e ingredientes locales para
+              crear delicias únicas. Hoy, Bubble es sinónimo de calidad y tradición, ofreciendo alegría en cada bocado.
+            </p>
+          </div>
           <a class="historia_link_base" href="#">
             <p class="historia_link">CONOCE MÁS</p>
           </a>
