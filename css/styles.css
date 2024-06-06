@@ -16,8 +16,8 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
-    -webkit-font-smoothing: antialiased; 
-    -moz-osx-font-smoothing: grayscale; 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 li {
@@ -190,11 +190,13 @@ a {
 }
 
 .parrafo_pri {
+    width: 70%;
     font-family: "Raleway", sans-serif;
     font-weight: 400;
     font-size: 20px;
     color: #fff;
     padding-bottom: 20px;
+    text-align: center;
 }
 
 .button_pri {
@@ -237,6 +239,22 @@ a {
     width: 100%;
     height: 570px;
     display: flex;
+    position: relative;
+}
+
+.fondo_parallax_catalogo_base {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+}
+
+.fondo_parallax_catalogo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.55);
 }
 
 .second_part1 {
@@ -244,13 +262,15 @@ a {
     height: 100%;
     display: flex;
     align-items: center;
-    padding: 70px 0 70px 0;
+    padding: 70px 0;
+    position: relative;
+    z-index: 2;
 }
 
 .annuncent {
     margin-left: 30%;
     width: 68%;
-    padding: 0 10px 0 10px;
+    padding: 0 10px;
 }
 
 .orlea3_base {
@@ -261,6 +281,7 @@ a {
 
 .orlea3 {
     width: 370px;
+    filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.7));
 }
 
 .annuncent_titulo {
@@ -271,10 +292,7 @@ a {
     letter-spacing: 1px;
     text-align: center;
     margin-top: 20px;
-}
-
-*+.uk-h1, *+.uk-h2, *+.uk-h3, *+.uk-h4, *+.uk-h5, *+.uk-h6, *+.uk-heading-2xlarge, *+.uk-heading-3xlarge, *+.uk-heading-large, *+.uk-heading-medium, *+.uk-heading-small, *+.uk-heading-xlarge, *+h1, *+h2, *+h3, *+h4, *+h5, *+h6 {
-    margin-top: 0;
+    text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.7);
 }
 
 .annuncent_parrafo {
@@ -313,30 +331,13 @@ a {
     padding-bottom: 2px;
     transition: all .3s;
     cursor: pointer;
+    text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.4);
 }
 
 .annuncent_link:hover {
     color: #f7c51e;
     border-bottom: 2px solid #f7c51e;
-}
-
-.separador_inferior {
-    transform: rotate(180deg);
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    top: -7.2vh;
-    left: 0;
-}
-
-.elementor-shape-fill {
-    fill: #52453c;
-    transform-origin: center;
-    box-sizing: border-box;
-    width: 100%;
-    line-height: 0;
-    direction: ltr;
-    transform: scaleY(0.3);
 }
 
 .second_part2 {
@@ -346,6 +347,8 @@ a {
     justify-content: flex-start;
     align-items: center;
     margin: 0 auto;
+    position: relative;
+    z-index: 2;
 }
 
 .grid_images {
@@ -361,6 +364,7 @@ a {
     height: 100%;
     transition-duration: .6s;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .grid_item:hover {
@@ -415,9 +419,12 @@ a {
 
 .third_base_titulo {
     font-family: "Satisfy", cursive;
-    font-size: 50px;
+    font-size: 45px;
     color: #fff;
     font-weight: 400;
+    text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.8);
+    margin-top: 20px;
+    margin-bottom: 0;
 }
 
 .third_base_parrafo {
@@ -535,6 +542,23 @@ a {
     width: 100%;
     height: 523px;
     background-color: #52453c;
+    position: relative;
+}
+
+.fondo_parallax_fourth {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    transform: scaleX(-1);
+}
+
+.fondo_parallax_fourth_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.75);
 }
 
 .fourth_base1 {
@@ -544,6 +568,7 @@ a {
     width: 50%;
     height: 100%;
     padding-right: 40px;
+    z-index: 2;
 }
 
 
@@ -566,6 +591,7 @@ a {
     object-fit: cover;
     border-radius: 10px;
     transition-duration: .6s;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .fourth_grid_item_img:hover {
@@ -579,6 +605,7 @@ a {
     display: flex;
     align-items: center;
     padding: 70px 0 70px 0;
+    z-index: 2;
 }
 
 .historia {
@@ -596,6 +623,7 @@ a {
     text-align: center;
     margin-bottom: 20px;
     margin-top: 20px;
+    text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.7);
 }
 
 .historia_parrafo_base {
@@ -634,6 +662,8 @@ a {
     padding-bottom: 2px;
     transition: all .3s;
     cursor: pointer;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.4);
 }
 
 .historia_link:hover {
@@ -650,11 +680,26 @@ a {
     background-size: cover;
     background-attachment: fixed;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     z-index: 0;
-    position: absolute;
+    position: relative;
+    overflow: hidden;
+    transition: none !important;
+}
+
+.five_galeria_index.no-move {
+    position: fixed;
+    width: 100%;
+}
+
+.grid_container_galeria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .galeria_shape {
@@ -668,8 +713,8 @@ a {
 
 .galeria {
     width: 100%;
-    height: 100px;
-    padding-bottom: 40px;
+    height: 9%;
+    margin-bottom: 40px;
 }
 
 .galeria_titulo {
@@ -677,11 +722,12 @@ a {
     justify-content: center;
     align-items: center;
     font-family: "Satisfy", cursive;
-    font-weight: 400;
+    font-size: 50px;
     color: #fff;
-    font-size: 61px;
-    letter-spacing: 1px;
-    text-align: center;
+    font-weight: 400;
+    text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.8);
+    margin: 0;
+    margin-top: 20px;
 }
 
 .uk-container {
@@ -692,12 +738,12 @@ a {
 
 .galeria_grid {
     width: 100%;
+    height: 60%;
     max-width: 1190px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
     padding: 10px;
-    justify-content: center;
 }
 
 .grid_galeria_pursuit,
@@ -735,6 +781,13 @@ a {
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+    transition-duration: .6s;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.galeria_grid_item_img:hover {
+    transform: scale(0.8);
+    transition-timing-function: cubic-bezier(.47, 2.02, .31, -.36);
 }
 
 .separador_galeria {
@@ -746,8 +799,111 @@ a {
 
 .six_comentarios_index {
     width: 100%;
-    height: 558px;
+    height: 100%;
+    background-color: #3e342d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    background-color: #3e342d;
+    border: none;
+    border-radius: none;
+}
+
+.card-img-top {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card_coment_base {
+    width: 100%;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 40px;
+    background-color: #3e342d;
+}
+
+.card_coment {
+    height: 400px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+}
+
+.card-body {
+    flex: none;
+}
+
+.card-text {
+    color: #f3f1dc;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.8;
+    font-weight: 500;
+    transform: scaleY(0.98);
+}
+
+.card-title {
+    color: #f3f1dc;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    transform: scaleY(0.9);
+    padding-top: 10px;
+}
+
+.chorro_chocolate {
+    position: relative;
+}
+
+.elementor-shape-fill {
+    fill: #52453c;
+}
+
+.comentarios_titulo_base {
+    width: 100%;
+    height: 230px;
     background-color: #52453c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.comentarios_titulo {
+    font-family: "Satisfy", cursive;
+    font-size: 45px;
+    color: #fff;
+    font-weight: 400;
+    text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    margin: 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.orlea5_base {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.orlea5 {
+    width: 530px;
+    filter: drop-shadow(0px 3px 2px rgba(0, 0, 0, 0.7));
 }
 
 /* footer seccion */
