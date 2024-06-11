@@ -54,9 +54,8 @@
     <section class="off_canvas">
       <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
         <div class="uk-offcanvas-bar">
-
           <button class="uk-offcanvas-close" type="button" uk-close></button>
-
+<!-- 
           <div id="carrito">
             <div class="botones-box">
               <button class="boton-vaciar" onclick="vaciarCarrito()">Vaciar Carrito</button>
@@ -64,10 +63,36 @@
             </div>
             <h2 style="margin-bottom: 2rem;">Tus Productos son:</h2>
             <ul class="lista-carro-estilo" id="lista-carrito">
-              <!-- Los productos agregados se mostrarán aquí -->
+
             </ul>
             <p class="Total-pago">El total a pagar es: <span id="total">$0</span></p>
+          </div> -->
+          <div class="carrito-canvas">
+            <div class="titulo-carrito-base">
+              <h2 class="titulo-carrito">Tus Productos</h2>
+            </div>
+            <div class="carrito-canvas-divisor">
+              <div class="carrito-canvas-img-base">
+                <img src="../assets/images/items/1barras_duo.jpg" alt="" class="carrito-canvas-img">
+              </div>
+              <div class="carrito-canvas-info">
+                <div class="carrito-canvas-base-titu">
+                  <h3 class="carrito-titu">Barritas Duo</h3>
+                </div>
+                <div class="carrito-canvas-descri-base">
+                  <p class="carrito-canvas descri">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+                <div class="contador-base">
+                  <p class="remove-carro">remove</p>
+                </div>
+                <div class="precio-base">
+                  <p class="precio-carro">30.000</p>
+                </div>
+              </div>
+            </div>
           </div>
+          
+
 
         </div>
       </div>
@@ -282,7 +307,7 @@
     </div>
   </footer>
   <div class="marca-footer-base">
-    <h5 class="marca-footer"><span class="marca-color">© 2024</span> · Chocolatería Bubble</h5>
+    <h5 class="marca-footer"><span class="marca-color">© 2024</span> · Chocolatería Bubble <span class="marca-de-agua">Creado por Mikedev</span></h5>
   </div>
   <script src="../js/api.js"></script>
   <script src="https://kit.fontawesome.com/369a31344d.js" crossorigin="anonymous"></script>

@@ -22,3 +22,4 @@ const BombonesCajas = [
 const Alfajores = [
   { id: 9, nombre: 'Alfajor', precio: 2200, img: "../assets/images/items/8alfajor.jpg" },
 ];
+
