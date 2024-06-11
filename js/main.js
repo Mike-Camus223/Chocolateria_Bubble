@@ -8,7 +8,7 @@ let carrito = [];
 
 //AGREGAR PRODUCTO AL ARRAY //
 function AgregarProducto(index) {
-    carrito.push(productos[index]);
+    carrito.push(BombonesCajas[index]);
     mostrarCarrito();
 }
 

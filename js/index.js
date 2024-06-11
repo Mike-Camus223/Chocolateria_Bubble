@@ -23,3 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 });
+
+// lightbox ulkit //
+
+
