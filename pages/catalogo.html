@@ -55,45 +55,19 @@
       <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
         <div class="uk-offcanvas-bar">
           <button class="uk-offcanvas-close" type="button" uk-close></button>
-<!-- 
-          <div id="carrito">
-            <div class="botones-box">
-              <button class="boton-vaciar" onclick="vaciarCarrito()">Vaciar Carrito</button>
-              <button class="boton-comprar" onclick="comprar()">Comprar</button>
-            </div>
-            <h2 style="margin-bottom: 2rem;">Tus Productos son:</h2>
-            <ul class="lista-carro-estilo" id="lista-carrito">
-
-            </ul>
-            <p class="Total-pago">El total a pagar es: <span id="total">$0</span></p>
-          </div> -->
+          <div class="botones-box">
+            <button class="boton-seguircomprando">Seguir Comprando</button>
+            <button class="boton-comprar" onclick="comprar()">Comprar</button>
+          </div>
           <div class="carrito-canvas">
             <div class="titulo-carrito-base">
               <h2 class="titulo-carrito">Tus Productos</h2>
             </div>
-            <div class="carrito-canvas-divisor">
-              <div class="carrito-canvas-img-base">
-                <img src="../assets/images/items/1barras_duo.jpg" alt="" class="carrito-canvas-img">
-              </div>
-              <div class="carrito-canvas-info">
-                <div class="carrito-canvas-base-titu">
-                  <h3 class="carrito-titu">Barritas Duo</h3>
-                </div>
-                <div class="carrito-canvas-descri-base">
-                  <p class="carrito-canvas descri">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                </div>
-                <div class="contador-base">
-                  <p class="remove-carro">remove</p>
-                </div>
-                <div class="precio-base">
-                  <p class="precio-carro">30.000</p>
-                </div>
-              </div>
-            </div>
-          </div>
+            <div id="productos-container">
           
-
-
+            </div>
+            <p class="Total-pago">El total a pagar es: <span id="total">$0</span></p>
+          </div>
         </div>
       </div>
     </section>
@@ -146,7 +120,7 @@
                 <p class="card_info">Costo $8.000</p>
               </div>
               <div class="card_button_box">
-                <input onclick="AgregarProducto(0)" class="card_button" type="button" value="Agregar Artículo">
+                <input onclick="agregarProducto(0)" class="card_button" type="button" value="Agregar Artículo">
               </div>
             </div>
             <div class="card_shop">
@@ -160,7 +134,7 @@
                 <p class="card_info">Costo $12.400</p>
               </div>
               <div class="card_button_box">
-                <input onclick="AgregarProducto(1)" class="card_button" type="button" value="Agregar Artículo">
+                <input onclick="agregarProducto(1)" class="card_button" type="button" value="Agregar Artículo">
               </div>
             </div>
             <div class="card_shop">
@@ -174,7 +148,7 @@
                 <p class="card_info">Costo $14.900</p>
               </div>
               <div class="card_button_box">
-                <input onclick="AgregarProducto(2)" class="card_button" type="button" value="Agregar Artículo">
+                <input onclick="agregarProducto(2)" class="card_button" type="button" value="Agregar Artículo">
               </div>
             </div>
             <div class="card_shop">
@@ -188,7 +162,7 @@
                 <p class="card_info">Costo $30.000</p>
               </div>
               <div class="card_button_box">
-                <input onclick="AgregarProducto(3)" class="card_button" type="button" value="Agregar Artículo">
+                <input onclick="agregarProducto(3)" class="card_button" type="button" value="Agregar Artículo">
               </div>
             </div>
             <div class="card_shop">
@@ -202,7 +176,7 @@
                 <p class="card_info">Costo $49.600</p>
               </div>
               <div class="card_button_box">
-                <input onclick="AgregarProducto(4)" class="card_button" type="button" value="Agregar Artículo">
+                <input onclick="agregarProducto(4)" class="card_button" type="button" value="Agregar Artículo">
               </div>
             </div>
             <div class="card_shop">
@@ -216,7 +190,7 @@
                 <p class="card_info">Costo $24.800</p>
               </div>
               <div class="card_button_box">
-                <input onclick="AgregarProducto(5)" class="card_button" type="button" value="Agregar Artículo">
+                <input onclick="agregarProducto(5)" class="card_button" type="button" value="Agregar Artículo">
               </div>
             </div>
             <div class="card_shop">
@@ -230,7 +204,7 @@
                 <p class="card_info">Costo $46.000</p>
               </div>
               <div class="card_button_box">
-                <input onclick="AgregarProducto(6)" class="card_button" type="button" value="Agregar Artículo">
+                <input onclick="agregarProducto(6)" class="card_button" type="button" value="Agregar Artículo">
               </div>
             </div>
             <div class="card_shop">
@@ -244,7 +218,7 @@
                 <p class="card_info">Costo $2.200</p>
               </div>
               <div class="card_button_box">
-                <input onclick="AgregarProducto(7)" class="card_button" type="button" value="Agregar Artículo">
+                <input onclick="agregarProducto(7)" class="card_button" type="button" value="Agregar Artículo">
               </div>
             </div>
             <div class="card_shop">
@@ -258,7 +232,7 @@
                 <p class="card_info">Costo $8.000</p>
               </div>
               <div class="card_button_box">
-                <input onclick="AgregarProducto(8)" class="card_button" type="button" value="Agregar Artículo">
+                <input onclick="agregarProducto(8)" class="card_button" type="button" value="Agregar Artículo">
               </div>
             </div>
           </div>
